@@ -4,7 +4,7 @@ function addGreeting(message) {
     // Create a constant variable called greeting to store the string "Hello! The message is: "
     const greeting = "Hello! The message is: ";
     
-    // Close the loop by using the return statement and using a value sustition that adds the greeting to the message
+    // Close the loop using the return statement that performs a value sustition that adds the greeting to the message
     return `${greeting}${message}`;
 }
 // Create a constant variable to store this unit's code
