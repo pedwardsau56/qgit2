@@ -1,5 +1,21 @@
+for (let i = 0; i < 5; i++) {
+    console.log("The current number is " + i.toString());
+}
+// ============================================
+let brands = ["Ferrari", "Pagani", "Mazda", "Holden", "Ford", "Mercedes", "Nissan", "Dacia", "Saab"];
+for (let i = 0; i < brands.length; i++) {
+    console.log(brands[i]);
+}
+// ============================================
+let target = "Nissan";
+for (let i = 0; i < brands.length; i++) {
+    if (brands[i] == target) {
+        console.log(`The number of letters in ${target} is ${i}.`);
+        break;
+    }
+}
+// ============================================
 // Function for multiplying numbers by 10 and showing the result.
-
 function multiplyByTen(...args) 
 {
     for (let i = 0; i < args.length; i++) 
@@ -14,33 +30,8 @@ function multiplyByTen(...args)
         console.log(`Number ${i} times 10 = ${currentNumber}`);
     }
 }
- 
 // Multiply some numbers by 10.
 multiplyByTen(5, 10, 15, 20);
-
-// ============================================================================
-// Function for checking if two values are the same.
-function checkValuesEqual(first, second) 
-{
-    // Variable for storing Boolean.
-    let valuesEqual;
-
-    // Task: Check if the values are the same, including their type.
-    valuesEqual = first === second;
-
-    // Show the result in the console.
-    if (valuesEqual) {
-        console.log("The values were equal.");
-    } else {
-        console.log("The values were not equal.");
-    }
-}
-
-// See if these pairs of values are the same.
-checkValuesEqual("hello", "goodbye");
-checkValuesEqual("hello", "hello");
-checkValuesEqual(5, 5);
-checkValuesEqual(5, "5");
 
 // ============================================================================
 // Function for counting how many 1s are in an array.
